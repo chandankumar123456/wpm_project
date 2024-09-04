@@ -1,13 +1,12 @@
-const openingTimeSchema = new
-    mongoose.Schema({
-        days: { type: String, required: true },
-        opening: String,
-        closing: String,
-        closed: {
-            type: Boolean,
-            required: true
-        }
-    });
+const openingTimeSchema = new mongoose.Schema({
+    days: { type: String, required: true },
+    opening: String,
+    closing: String,
+    closed: {
+        type: Boolean,
+        required: true
+    }
+});
 const reviewSchema = new mongoose.Schema({
     author: String,
     rating: {
